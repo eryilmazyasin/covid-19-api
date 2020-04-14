@@ -1,0 +1,13 @@
+image: node:12.14.0
+
+stages:
+  - test
+  #- build
+  #- deploy
+
+test: 
+  stage: test
+  script:
+    - npm
+    - CI=true npm test
+    
