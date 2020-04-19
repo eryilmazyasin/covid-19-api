@@ -8,11 +8,11 @@ export default class About extends Component {
       <div className="container mt-5">
         <div className="row d-flex justify-content-center">
           <div className="col-md-4">
-            <img src={github} width="60" />
+            <img src={github} alt="github" width="60" />
             <a href="https:www.github.com/eryilmazyasin" className="ml-3">eryilmazyasin</a>
           </div>
           <div className="col-md-4 text-right">
-            <img src={gitlab} width="60" />
+            <img src={gitlab} alt="gtlab" width="60" />
             <a href="https:www.gitlab.com/eryilmazyasin" className="ml-3">eryilmazyasin</a>
           </div>
         </div>
