@@ -64,9 +64,10 @@ export default class App extends Component {
       })
       .then((result) => {
         this.setState({
-          turkeyData: result.data.result[15],
+          turkeyData: result.data.result[8],
           allData: result.data.result,
         });
+        console.log(result.data);
       })
       .catch((error) => {
         console.log(error);

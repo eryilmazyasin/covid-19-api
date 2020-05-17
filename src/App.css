@@ -84,3 +84,25 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.cinformation .list-group {
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.cinformation .list-group .list-group-item {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .cinformation .list-group .list-group-item {
+    width: 50%;
+  }
+}

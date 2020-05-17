@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function CountryData({ turkeyData }) {
-  if(turkeyData.country === 'Turkey'){
-      turkeyData.country = 'Türkiye';
+  if (turkeyData.country === "Turkey") {
+    turkeyData.country = "Türkiye";
   }
 
   return (
@@ -10,27 +10,44 @@ export default function CountryData({ turkeyData }) {
       <div className="country">
         <div className="cname">{turkeyData.country}</div>
         <div className="cinformation">
-          <div className="cinfo">
-            <span>Toplam Vaka </span> {turkeyData.totalCases}
-          </div>
-          
-          <div className="cinfo">
-            <span>Yeni Vaka </span> {turkeyData.newCases}
-          </div>
-
-          <div className="cinfo">
-            <span>Toplam Ölüm </span> {turkeyData.totalDeaths}
-          </div>
-
-          <div className="cinfo">
-            <span>Yeni Ölüm </span> {turkeyData.newDeaths}
-          </div>
-          <div className="cinfo">
-            <span>İyileşmiş Vaka </span> {turkeyData.totalRecovered}
-          </div>
-          <div className="cinfo">
-            <span>Aktif Vaka </span> {turkeyData.activeCases}
-          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              Toplam Vaka
+              <span class="badge badge-primary badge-pill">
+                {turkeyData.totalCases}
+              </span>
+            </li>
+            <li class="list-group-item">
+              Yeni Vaka
+              <span class="badge badge-primary badge-pill">
+                {turkeyData.newCases}
+              </span>
+            </li>
+            <li class="list-group-item">
+              Toplam Ölüm
+              <span class="badge badge-primary badge-pill">
+                {turkeyData.totalDeaths}
+              </span>
+            </li>
+            <li class="list-group-item">
+              Yeni Ölüm
+              <span class="badge badge-primary badge-pill">
+                {turkeyData.newDeaths}
+              </span>
+            </li>
+            <li class="list-group-item">
+              İyileşmiş Vaka
+              <span class="badge badge-primary badge-pill">
+                {turkeyData.totalRecovered}
+              </span>
+            </li>
+            <li class="list-group-item">
+              Aktif Vaka
+              <span class="badge badge-primary badge-pill">
+                {turkeyData.activeCases}
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

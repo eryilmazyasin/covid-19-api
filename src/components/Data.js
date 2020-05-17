@@ -34,26 +34,46 @@ export default class Data extends Component {
                   <span className="ml-3">{title}</span>
                 </div>
                     {this.state.visible &&
-                  <div className="card-body">
-                    <div>
-                      <span>Toplam Vaka </span> {totalCases}
-                    </div>
-                    <div>
-                      <span>Yeni Vaka </span> {newCases}
-                    </div>
-                    <div>
-                      <span>Toplam Ölüm </span> {totalDeaths}
-                    </div>
-                    <div>
-                      <span>Yeni Ölüm </span> {newDeaths}
-                    </div>
-                    <div>
-                      <span>İyileşmiş Vaka </span> {totalRecovered}
-                    </div>
-                    <div>
-                      <span>Aktif Vaka </span> {activeCases}
-                    </div>
-                  </div>
+
+                      <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              Toplam Vaka
+              <span class="badge badge-primary badge-pill">
+              {totalCases}
+              </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Yeni Vaka
+              <span class="badge badge-primary badge-pill">
+              {newCases}
+              </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Toplam Ölüm
+              <span class="badge badge-primary badge-pill">
+              {totalDeaths}
+              </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Yeni Ölüm
+              <span class="badge badge-primary badge-pill">
+              {newDeaths}
+              </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              İyileşmiş Vaka
+              <span class="badge badge-primary badge-pill">
+              {totalRecovered}
+              </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Aktif Vaka
+              <span class="badge badge-primary badge-pill">
+              {activeCases}
+              </span>
+            </li>
+          </ul>
+                  
     }
                   </div>
                   </div>
