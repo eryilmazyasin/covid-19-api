@@ -1,6 +1,8 @@
 # Covid-19
 
-collectapi tarafından sağlanan api hizmeti kullanılarak oluşturulan bir bilgilendirme sayfası.
+CollectApi hizmeti kullanılarak hazırlanan basit bir covid vaka bilgilendirme projesi.
+
+live demo: https://co19vid.netlify.app/
 
 to local start:
 
